@@ -59,4 +59,12 @@ class MessageDeliveryDataCollector extends DataCollector
     {
         return $this->data;
     }
+
+    /**
+     * Resets this data collector to its initial state.
+     */
+    public function reset()
+    {
+        $this->data = array();
+    }
 }
